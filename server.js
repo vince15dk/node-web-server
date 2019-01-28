@@ -43,6 +43,11 @@ app.get('/', (req, res)=>{
     })
 });
 
+app.get('/projects', (req, res)=>{
+    res.render('projects',{
+        pageTitle: 'Projects'
+    })
+})
 
 app.get('/about', (req, res)=>{
     res.render('about',{
